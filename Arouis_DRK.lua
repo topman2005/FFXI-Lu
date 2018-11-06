@@ -205,9 +205,19 @@ function get_sets()
 			    back=STR_Back,waist="Fotia belt",legs="Ratri cuisses",feet="Sulevia's leggings +2"}
 				
 	sets.Insurgency = {ammo="Knobkierrie",
-			    head="Ratri sallet",neck="Fotia gorget", ear1="Telos earring",ear2="Moonshade earring",
-			    body="Ignominy cuirass +2",hands="Ratri gadlings",ring1="Niqmaddu ring",ring2="Petrov ring",
-			    back="Ankou's Mantle",waist="Caudata belt",legs="Ignominy flanchard +3",feet={ name="Valorous Greaves", augments={'Accuracy+24','"Dbl.Atk."+4','Attack+4',}},}
+    head="Ratri Sallet",
+    body="Ignominy Cuirass +2",
+    hands="Ratri Gadlings",
+    legs="Ratri Cuisses",
+    feet="Sulev. Leggings +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Ishvara Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+5','Weapon skill damage +10%',}},
+}
 				
 	sets.Entropy = {ammo="Pemphredo tathlum",
 			    head="Ignominy burgonet +3",neck="Fotia gorget", ear1="Brutal earring",ear2="Moonshade earring",
@@ -215,6 +225,21 @@ function get_sets()
 			    back=INT_Back,waist="Fotia belt",legs="Ignominy flanchard +3",feet="Flamma gambieras +2"}
 				
 	sets.CR = {ammo="Knobkierrie",
+    head="Ratri Sallet",
+    body="Ignominy Cuirass +2",
+    hands="Ratri Gadlings",
+    legs="Ratri Cuisses",
+    feet="Sulev. Leggings +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Ishvara Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+5','Weapon skill damage +10%',}},
+}
+    
+	sets.Cata = {ammo="Knobkierrie",
     head="Ratri Sallet",
     body="Ignominy Cuirass +2",
     hands="Ratri Gadlings",
@@ -331,7 +356,10 @@ function precast(spell)
 			send_command('@input /echo Resolution Set')					
 		elseif spell.english == 'Scourge' then		
 			equip(sets.Scourge)
-			send_command('@input /echo Scourge Set')		
+			send_command('@input /echo Scourge Set')	
+		elseif spell.english == 'Catastrophe' then		
+			equip(sets.Cata)
+			send_command('@input /echo Catastrophe Set')			
 		elseif spell.english == 'Shockwave' then
 			equip(sets.Shockwave)
 			send_command('@input /echo Shockwave Set')
