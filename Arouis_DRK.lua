@@ -219,10 +219,20 @@ function get_sets()
     back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+5','Weapon skill damage +10%',}},
 }
 				
-	sets.Entropy = {ammo="Pemphredo tathlum",
-			    head="Ignominy burgonet +3",neck="Fotia gorget", ear1="Brutal earring",ear2="Moonshade earring",
-			    body="Ignominy cuirass +3",hands="Regal captain's gloves",ring1="Niqmaddu ring",ring2="Mujin band",
-			    back=INT_Back,waist="Fotia belt",legs="Ignominy flanchard +3",feet="Flamma gambieras +2"}
+	sets.Entropy = {ammo="Knobkierrie",
+    head="Ratri Sallet",
+    body="Ignominy Cuirass +2",
+    hands="Ratri Gadlings",
+    legs={ name="Fall. Flanchard +2", augments={'Enhances "Muted Soul" effect',}},
+    feet="Flam. Gambieras +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Brutal Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Flamma Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+}
 				
 	sets.CR = {ammo="Knobkierrie",
     head="Ratri Sallet",
@@ -245,12 +255,12 @@ function get_sets()
     hands="Ratri Gadlings",
     legs="Ratri Cuisses",
     feet="Sulev. Leggings +2",
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
+    neck="Abyssal Beads",
+    waist="Caudata Belt",
     left_ear="Ishvara Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
-    right_ring="Hetairoi Ring",
+    right_ring="Apate Ring",
     back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+5','Weapon skill damage +10%',}},
 }
 	
@@ -298,42 +308,68 @@ function get_sets()
 	sets.precast.dark = {ammo="Impatiens",head="Carmine mask",ear1="Loquacious earring",body="Odyssean chestplate",hands="Leyline gloves",ring1="Weatherspoon ring",
 				ring2="Kishar ring",waist="Witful belt",legs="Eschite cuisses",feet="Carmine greaves +1"}
 					
-	sets.Absorb = {ammo="Pemphredo tathlum",head="Ignominy burgonet +3",neck="Erra Pendant",ear1="Dark earring",ear2="Hirudinea earring",
-			 	 body="Carmine scale mail",hands="Pavor Gauntlets",ring1="Evanescence ring",ring2="Kishar ring",
-			   	 back="Chuparrosa mantle",waist="Eschan stone",legs="Eschite cuisses",feet="Ratri sollerets"}
+	sets.Absorb = {ammo="Hydrocera",
+    head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
+    body={ name="Carm. Scale Mail", augments={'MP+60','INT+10','MND+10',}},
+    hands={ name="Fall. Fin. Gaunt. +1", augments={'Enhances "Diabolic Eye" effect',}},
+    legs={ name="Fall. Flanchard +2", augments={'Enhances "Muted Soul" effect',}},
+    feet="Ratri Sollerets",
+    neck="Erra Pendant",
+    waist="Eschan Stone",
+    left_ear="Digni. Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Stikini Ring",
+    right_ring="Archon Ring",
+    back="Chuparrosa Mantle",
+}
 	
 	sets.Dark = {ammo="Pemphredo tathlum",head="Ignominy burgonet +3",neck="Erra Pendant",ear1="Dark earring",ear2="Hirudinea earring",
 			 	 body="Carmine scale mail",hands="Fallen's finger gauntlets +1",ring1="Evanescence ring",ring2="Stikini ring",
 			   	 back="Niht mantle",waist="Eschan stone",legs="Eschite cuisses",feet="Ignominy sollerets +1"}
-	
-	sets.Drain = {ammo="Sapience Orb",
-    head="Pixie Hairpin +1",
-    body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
-    hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
-    legs="Eschite Cuisses",
-    feet="Bale Sollerets +2",
-    neck="Erra Pendant",
-    waist="Eschan Stone",
-    left_ear="Loquac. Earring",
-    right_ear="Hermetic Earring",
-    left_ring="Kishar Ring",
-    right_ring="Archon Ring",
-    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+				 
+	sets.Dread = {ammo="Aqreqaq Bomblet",
+    head="Ratri Sallet",
+    body="Kubira Meikogai",
+    hands="Ratri Gadlings",
+    legs="Ratri Cuisses",
+    feet="Ratri Sollerets",
+    neck="Dualism Collar",
+    waist="Oneiros Belt",
+    left_ear="Odnowa Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Meridian Ring",
+    right_ring="Bomb Queen Ring",
+    back="Agema Cape",
 }
 	
-	sets.Drain3 = {ammo="Sapience Orb",
+	sets.Drain = {ammo="Hydrocera",
     head="Pixie Hairpin +1",
-    body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
-    hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
-    legs="Eschite Cuisses",
-    feet="Bale Sollerets +2",
+    body={ name="Carm. Scale Mail", augments={'MP+60','INT+10','MND+10',}},
+    hands={ name="Fall. Fin. Gaunt. +1", augments={'Enhances "Diabolic Eye" effect',}},
+    legs={ name="Fall. Flanchard +2", augments={'Enhances "Muted Soul" effect',}},
+    feet="Ratri Sollerets",
     neck="Erra Pendant",
-    waist="Eschan Stone",
+    waist="Austerity Belt +1",
     left_ear="Loquac. Earring",
-    right_ear="Hermetic Earring",
-    left_ring="Kishar Ring",
+    right_ear="Hirudinea Earring",
+    left_ring="Stikini Ring",
     right_ring="Archon Ring",
-    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    back={ name="Niht Mantle", augments={'Attack+7','Dark magic skill +9','"Drain" and "Aspir" potency +20',}},
+}
+	
+	sets.Drain3 = {ammo="Hydrocera",
+    head="Pixie Hairpin +1",
+    body={ name="Carm. Scale Mail", augments={'MP+60','INT+10','MND+10',}},
+    hands={ name="Fall. Fin. Gaunt. +1", augments={'Enhances "Diabolic Eye" effect',}},
+    legs={ name="Fall. Flanchard +2", augments={'Enhances "Muted Soul" effect',}},
+    feet="Ratri Sollerets",
+    neck="Erra Pendant",
+    waist="Austerity Belt +1",
+    left_ear="Loquac. Earring",
+    right_ear="Hirudinea Earring",
+    left_ring="Stikini Ring",
+    right_ring="Archon Ring",
+    back={ name="Niht Mantle", augments={'Attack+7','Dark magic skill +9','"Drain" and "Aspir" potency +20',}},
 }
 	
 end
@@ -446,8 +482,7 @@ function midcast(spell,act)
 			end
 			weathercheck(spell.element)
 		elseif spell.name == "Dread Spikes" then
-			equip(sets.Dark)
-			equip({body="Bale cuirass +2"})
+			equip(sets.Dread)
 			send_command('@input /echo Dread Spikes Set')
 		elseif spell.name == "Endark II" then
 			equip(sets.Dark)
